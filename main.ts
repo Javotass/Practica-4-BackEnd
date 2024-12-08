@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import "https://deno.land/x/dotenv@v3.2.0/load.ts";
+=======
+// import "https://deno.land/x/dotenv@v3.2.0/load.ts";
+>>>>>>> 879d1d9478d5edc2cda2fbf93a6f134f9afb9d29
 import { MongoClient, ObjectId } from "mongodb";
 import {
   fromModelToUsuario,

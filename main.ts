@@ -8,8 +8,9 @@ import {
 import type { UsuarioDB, ProyectoDB, TareaDB } from "./types.ts";
 
 const url = Deno.env.get("MONGO_URL");
+
 if (!url) {
-  throw new Error("MONGO_URL no está configurado.");
+  throw new Error("MONGO_URL no estÃ¡ configurado.");
 }
 
 // Crea y conecta un cliente de MongoDB

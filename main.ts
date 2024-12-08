@@ -1,4 +1,4 @@
-//import "https://deno.land/x/dotenv@v3.2.0/load.ts";
+import "https://deno.land/x/dotenv@v3.2.0/load.ts";
 import { MongoClient, ObjectId } from "mongodb";
 import {
   fromModelToUsuario,
@@ -8,9 +8,8 @@ import {
 import type { UsuarioDB, ProyectoDB, TareaDB } from "./types.ts";
 
 const url = Deno.env.get("MONGO_URL");
-
 if (!url) {
-  throw new Error("MONGO_URL no estÃ¡ configurado.");
+  throw new Error("MONGO_URL no está configurado.");
 }
 
 // Crea y conecta un cliente de MongoDB
